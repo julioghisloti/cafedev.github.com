@@ -1,0 +1,134 @@
+/* Cafe Dev Style Index */
+
+/* Body ========================================================================================= */
+body{
+	background-image: url("../img/comp/bk.jpg");
+	background-repeat: repeat;
+	font-family: 'day_romanregular', serif;
+}
+
+h1,h3,h5,h6{margin: 5px 0 8px 0; }
+
+/* Link ========================================================================================= */
+a, a:link, a:visited{color: #5F3713; text-decoration: none;}
+a:hover{text-decoration: underline;}
+
+/* Box Index ==================================================================================== */
+#box-nav{
+	background-color: #FFF;
+	-webkit-box-shadow: 0 0 15px #AAA;
+	-moz-box-shadow: 0 0 15px #AAA;
+	-ms-box-shadow: 0 0 15px #AAA;
+	-o-box-shadow: 0 0 15px #AAA;
+	box-shadow: 0 0 15px #AAA;
+	height: 372px;
+	padding: 10px;
+	text-align: center;
+	z-index: 999;
+}
+
+	/* Unfixed */
+	.unfixed{
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		width: 277px;
+		top: 50px;
+	}
+
+	/* Fixed */
+	.fixed{
+		position: fixed;
+		width: 100%;
+		top: -313px;
+	}
+
+	/* Logo */
+	.logo{
+		height: 229px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		width: 115px;
+	}
+
+	/* Menu */
+	.menu{
+		margin-left: auto; 
+		margin-right: auto;
+		margin-top: 5px; 
+		position: relative; 
+		width: 297px;
+	}
+	.menu ul{margin: 0; padding: 0;}
+	.menu li{margin-right: 5px; display: inline-block;}
+
+/* Text ========================================================================================= */
+.title-1{color: #5F3713;}
+.title-2{color: #846243; font-style: italic;}
+
+/* Content ====================================================================================== */
+.content{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 150px;
+	width: 980px;
+}
+
+.content-post{
+	background-color: #FFF; padding: 20px;
+	text-align: justify;
+	-webkit-box-shadow: 0 0 8px #AAA;
+	-moz-box-shadow: 0 0 8px #AAA;
+	-ms-box-shadow: 0 0 8px #AAA;
+	-o-box-shadow: 0 0 8px #AAA;
+	box-shadow: 0 0 8px #AAA;
+}
+
+/* Posts ======================================================================================== */
+.posts-all{list-style: none; margin: 0; padding: 0;}
+
+.posts{
+	background-color: #FFF;
+	border-left: 3px solid #846243;
+	border-radius: 3px 0 0 3px;
+	-webkit-box-shadow: 0 0 8px #AAA;
+	-moz-box-shadow: 0 0 8px #AAA;
+	-ms-box-shadow: 0 0 8px #AAA;
+	-o-box-shadow: 0 0 8px #AAA;
+	box-shadow: 0 0 8px #AAA;
+	height: 80px;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+/* Footer ======================================================================================= */
+.footer-all{
+	background-color: #413226;
+	bottom: 0;
+	display: block;
+	height: 150px;
+	margin-top: 200px;
+	position: relative;
+	width: 100%;
+}
+
+/* Responsive =================================================================================== */
+/* Max Width 1024px */
+@media only screen and (max-width:1024px) {
+	#box-nav{padding: 10px 0 10px 0; top: 0; width: 100%;}
+	.unfixed{top: 0;}
+	.fixed{left: 0; margin-left: 0; position: relative;}
+	.menu{margin-left: auto; margin-right: auto;} 
+	.content{top: 50px; width: 90%;}
+}
+
+/* Max Width 480px */
+@media only screen and (max-width:480px) {
+	#box-nav{padding: 10px 0 10px 0; top: 0; width: 100%;}
+	.unfixed{top: 0;}
+	.fixed{left: 0; margin-left: 0; position: relative;}
+	.menu{margin-left: auto; margin-right: auto;} 
+}

@@ -1,0 +1,18 @@
+---
+layout: default
+title: Café Dev
+---
+
+<section id="main">
+  <h1>Posts</h1>
+  <ul class="posts-all">
+    {% for post in site.posts %}
+      <li class="posts">
+       <!-- Post Title --><a href="{{ post.url }}"><h3><span class="title-1">{{ post.title }}</span></h3></a>
+       <!-- Post Date --> <h6><span class="title-2"><i>{{ post.date | date_to_string }}</i></span></h6>
+      </li>
+    {% endfor %}
+  </ul> 
+
+  <br><br>
+</section>
